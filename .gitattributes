@@ -1,0 +1,10 @@
+# Shell scripts must use LF on all platforms (CRLF breaks the shebang on Unix)
+*.sh text eol=lf
+
+# PowerShell scripts stay native (CRLF on Windows is fine)
+*.ps1 text eol=crlf
+
+# Markdown / config: normalize on commit, native on checkout
+*.md text
+LICENSE text
+.gitattributes text
